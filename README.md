@@ -1,6 +1,5 @@
 # learn-claude-code-101
 
-
 Install podman:
 
 ```bash
@@ -8,13 +7,11 @@ sudo apt-get install podman
 podman machine init
 ```
 
-
 Build the container:
 
 ```bash
 podman build -t sandbox -f Containerfile
 ```
-
 
 Run the container, bind-mounting to the current directory.
 
@@ -29,7 +26,6 @@ podman run --rm -it \
   -v claude-config:/root/.claude \
   sandbox
 ```
-
 
 I have added a Pixi task to this repository that runs the above command.
 
