@@ -1,0 +1,11 @@
+[workspace]
+authors = ["avcopan <avcopan@gmail.com>"]
+channels = ["conda-forge"]
+name = "learn-claude-code-101"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[tasks]
+sandbox = 'podman run --rm -it -v "$PWD":/workspace:Z -v claude-config:/root/.claude sandbox'
+
+[dependencies]

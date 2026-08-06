@@ -2,7 +2,7 @@ FROM ghcr.io/prefix-dev/pixi:0.76.1-noble
 
 # Add curl, cleaning up package indexes afterwards
 RUN apt-get update \
- && apt-get install -y --no-install-recommends curl git \
+ && apt-get install -y --no-install-recommends curl git vim \
  && rm -rf /var/lib/apt/lists/*
 
 # Add ~/.local/bin to path

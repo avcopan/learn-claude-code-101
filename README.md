@@ -29,3 +29,10 @@ podman run --rm -it \
   -v claude-config:/root/.claude \
   sandbox
 ```
+
+
+I have added a Pixi task to this repository that runs the above command.
+
+```bash
+pixi run sandbox
+```
